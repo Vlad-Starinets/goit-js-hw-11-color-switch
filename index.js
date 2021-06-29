@@ -33,7 +33,7 @@ body: document.getElementsByTagName('body'),
   refs.start.addEventListener("click", () => {
     counterColors = setInterval(() => {
         const color = randomColor()
-        refs.body.style.backgroundColor = color;
+        document.body.style.backgroundColor = color;
 },2000);
 refs.start.setAttribute('disabled', true);
 refs.stop.removeAttribute('disabled');
